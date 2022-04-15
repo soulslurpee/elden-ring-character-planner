@@ -4,191 +4,207 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/assets/scss/main.scss">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
   <title>Document</title>
 </head>
 <header>
   <nav id="title-nav"></nav>
 </header>
-<body>
-  <section id="basic-and-second">
-    <div id="basic">
-      <div id="basic-name"></div>
-      <div id="basic-class"></div>
-      <div id="basic-level"></div>
+<body class="container">
+  <section class="row" id="basic-and-second">
+    <div class="col" id="basic">
+      <div id="basic-name">Character Name</div>
+      <div id="basic-class">Starting Class</div>
+      <div id="basic-level">Level Needed</div>
     </div>
-    <div id="second">
-      <div id="second-hp"></div>
-      <div id="second-fp"></div>
-      <div id="second-stam"></div>
-      <div id="second-equip"></div>
-      <div id="second-poise"></div>
-      <div id="second-discovery"></div>
+    <div class="col" id="second1">
+      <div id="second-hp">HP</div>
+      <div id="second-fp">FP</div>
+      <div id="second-stam">STA</div>
     </div>
-  </section>
-
-  <section id="attr-and-res">
-    <div id="attr">
-      <div id="attr-title"></div>
-      <div id="attr-vig">
-        <div id="vig-title"></div>
-        <div id="vig-start"></div>
-        <div id="vig-gear"></div>
-        <div id="vig-buff"></div>
-        <div id="vig-inc"></div>
-        <div id="vig-up"></div>
-        <div id="vig-down"></div>
-      </div>
-      <div id="attr-min">
-        <div id="min-title"></div>
-        <div id="min-start"></div>
-        <div id="min-gear"></div>
-        <div id="min-buff"></div>
-        <div id="min-inc"></div>
-        <div id="min-up"></div>
-        <div id="min-down"></div>
-      </div>
-      <div id="attr-end">
-        <div id="end-title"></div>
-        <div id="end-start"></div>
-        <div id="end-gear"></div>
-        <div id="end-buff"></div>
-        <div id="end-inc"></div>
-        <div id="end-up"></div>
-        <div id="end-down"></div>
-      </div>
-      <div id="attr-str">
-        <div id="str-title"></div>
-        <div id="str-start"></div>
-        <div id="str-gear"></div>
-        <div id="str-buff"></div>
-        <div id="str-inc"></div>
-        <div id="str-up"></div>
-        <div id="str-down"></div>
-      </div>
-      <div id="attr-dex">
-        <div id="dex-title"></div>
-        <div id="dex-start"></div>
-        <div id="dex-gear"></div>
-        <div id="dex-buff"></div>
-        <div id="dex-inc"></div>
-        <div id="dex-up"></div>
-        <div id="dex-down"></div>
-      </div>
-      <div id="attr-int">
-        <div id="int-title"></div>
-        <div id="int-start"></div>
-        <div id="int-gear"></div>
-        <div id="int-buff"></div>
-        <div id="int-inc"></div>
-        <div id="int-up"></div>
-        <div id="int-down"></div>
-      </div>
-      <div id="attr-fai">
-        <div id="fai-title"></div>
-        <div id="fai-start"></div>
-        <div id="fai-gear"></div>
-        <div id="fai-buff"></div>
-        <div id="fai-inc"></div>
-        <div id="fai-up"></div>
-        <div id="fai-down"></div>
-      </div>
-      <div id="attr-arc">
-        <div id="arc-title"></div>
-        <div id="arc-start"></div>
-        <div id="arc-gear"></div>
-        <div id="arc-buff"></div>
-        <div id="arc-inc"></div>
-        <div id="arc-up"></div>
-        <div id="arc-down"></div>
-      </div>
-
-    </div>
-    <div id="res">
-      <div id="res-immu">
-        <div id="immu-title"></div>
-        <div id="immu-def"></div>
-        <div id="immu-neg"></div>
-      </div>
-      <div id="res-focu">
-        <div id="focu-title"></div>
-        <div id="focu-def"></div>
-        <div id="focu-neg"></div>
-      </div>
-      <div id="res-robu">
-        <div id="robu-title"></div>
-        <div id="robu-def"></div>
-        <div id="robu-neg"></div>
-      </div>
-      <div id="res-vita">
-        <div id="vita-title"></div>
-        <div id="vita-def"></div>
-        <div id="vita-neg"></div>
-      </div>
+    <div class="col" id="second2">
+      <div id="second-equip">EpL</div>
+      <div id="second-poise">Poise</div>
+      <div id="second-discovery">Disc</div>
     </div>
   </section>
-
-  <section id="atk-and-def">
-    <div id="atk">
-      <div id="atk-title"></div>
-      <div id="atk-main">
-        <div id="main-title"></div>
-        <div id="main1"></div>
-        <div id="main2"></div>
-        <div id="main3"></div>
+  <section class = "row" id="bottom-sections">
+    <div class="col" id="attr-and-atk">
+      <div class="container" id="attr">
+        <div class="row" id="attr-title">Attributes</div>
+        <div class="row" id="attr-ex">
+          <div class="col" id="ex-title">Stat</div>
+          <div class="col" id="ex-start">Class</div>
+          <div class="col" id="ex-gear">Gear</div>
+          <div class="col" id="ex-buff">Buff</div>
+          <div class="col" id="ex-inc">Level</div>
+          <div class="col" id="ex-inc">Lvl +</div>
+          <div class="col" id="ex-inc">Lvl -</div>
+        </div>
+        <div class="row" id="attr-vig">
+          <div class="col" id="vig-title">VIG</div>
+          <div class="col" id="vig-start">##</div>
+          <div class="col" id="vig-gear">##</div>
+          <div class="col" id="vig-buff">##</div>
+          <div class="col" id="vig-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="vig-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="vig-down"></button>
+        </div>
+        <div class="row" id="attr-min">
+          <div class="col" id="min-title">MIN</div>
+          <div class="col" id="min-start">##</div>
+          <div class="col" id="min-gear">##</div>
+          <div class="col" id="min-buff">##</div>
+          <div class="col" id="min-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="min-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="min-down"></button>
+        </div>
+        <div class="row" id="attr-end">
+          <div class="col" id="end-title">END</div>
+          <div class="col" id="end-start">##</div>
+          <div class="col" id="end-gear">##</div>
+          <div class="col" id="end-buff">##</div>
+          <div class="col" id="end-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="end-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="end-down"></button>
+        </div>
+        <div class = "row" id="attr-str">
+          <div class="col" id="str-title">STR</div>
+          <div class="col" id="str-start">##</div>
+          <div class="col" id="str-gear">##</div>
+          <div class="col" id="str-buff">##</div>
+          <div class="col" id="str-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="str-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="str-down"></button>
+        </div>
+        <div class="row" id="attr-dex">
+          <div class="col" id="dex-title">DEX</div>
+          <div class="col" id="dex-start">##</div>
+          <div class="col" id="dex-gear">##</div>
+          <div class="col" id="dex-buff">##</div>
+          <div class="col" id="dex-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="dex-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="dex-down"></button>
+        </div>
+        <div class="row" id="attr-int">
+          <div class="col" id="int-title">INT</div>
+          <div class="col" id="int-start">##</div>
+          <div class="col" id="int-gear">##</div>
+          <div class="col" id="int-buff">##</div>
+          <div class="col" id="int-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="int-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="int-down"></button>
+        </div>
+        <div class="row" id="attr-fai">
+          <div class="col" id="fai-title">FAI</div>
+          <div class="col" id="fai-start">##</div>
+          <div class="col" id="fai-gear">##</div>
+          <div class="col" id="fai-buff">##</div>
+          <div class="col" id="fai-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="fai-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="fai-down"></button>
+        </div>
+        <div class="row" id="attr-arc">
+          <div class="col" id="arc-title">ARC</div>
+          <div class="col" id="arc-start">##</div>
+          <div class="col" id="arc-gear">##</div>
+          <div class="col" id="arc-buff">##</div>
+          <div class="col" id="arc-lvl">##</div>
+          <button type="button" class="col bi bi-caret-up" id="arc-up"></button>
+          <button type="button" class="col bi bi-caret-down" id="arc-down"></button>
+        </div>
       </div>
-      <div id="atk-off">
-        <div id="off-title"></div>
-        <div id="off1"></div>
-        <div id="off2"></div>
-        <div id="off3"></div>
-      </div>
+      <div class="container" id="atk">
+        <div class ="row">Attack Power</div>
+        <div class="row">
+          <div class="col" id="main-title">Main</div>
+          <div class="col" id="main1">R1</div>
+          <div class="col" id="main2">R2</div>
+          <div class="col" id="main3">R3</div>
+        </div>
+        <div class="row">
+          <div class="col" id="off-title">Off-Hand</div>
+          <div class="col" id="off1">L1</div>
+          <div class="col" id="off2">L2</div>
+          <div class="col" id="off3">L3</div>
+        </div>
     </div>
-    <div id="def">
-      <div id="def-title"></div>
-        <div id="def-phys">
-          <div id="phys-title"></div>
-          <div id="phys-def"></div>
-          <div id="phys-neg"></div>
+
+    </div>
+    <div class="col" id="def-and-res">
+
+      <div class="container" id="def">
+        <div class="row" id="def-title">Defense & Negation</div>
+        <div class="row" id="def-phys">
+          <div class="col" id="phys-title">Physical</div>
+          <div class="col" id="phys-def">phys##</div>
+          <div class="col" id="phys-neg">phys##</div>
         </div>
-        <div id="def-stri">
-          <div id="stri-title"></div>
-          <div id="stri-def"></div>
-          <div id="stri-neg"></div>
+          <div class= "row" id="def-stri">
+            <div class="col" id="stri-title">vs Strike</div>
+            <div class="col" id="stri-def">stri##</div>
+            <div class="col" id="stri-neg">stri##</div>
+          </div>
+          <div class="row" id="def-slas">
+            <div class="col" id="slas-title">vs Slash</div>
+            <div class="col" id="slas-def">slas##</div>
+            <div class="col" id="slas-neg">slas##</div>
+          </div>
+          <div class="row" id="def-pier">
+            <div class="col" id="pier-title">vs Pierce</div>
+            <div class="col" id="pier-def">pier##</div>
+            <div class="col" id="pier-neg">pier##</div>
+          </div>
+          <div class="row" id="def-magi">
+            <div class="col" id="magi-title">Magic</div>
+            <div class="col" id="magi-def">magi##</div>
+            <div class="col" id="magi-neg">magi##</div>
+          </div>
+          <div class="row" id="def-fire">
+            <div class="col" id="fire-title">Fire</div>
+            <div class="col" id="fire-def">fire##</div>
+            <div class="col" id="fire-neg">fire##</div>
+          </div>
+          <div class="row" id="def-ligh">
+            <div class="col" id="ligh-title">Lightning</div>
+            <div class="col" id="ligh-def">ligh##</div>
+            <div class="col" id="ligh-neg">ligh##</div>
+          </div>
+          <div class="row" id="def-holy">
+            <div class="col" id="holy-title">Holy</div>
+            <div class="col" id="holy-def">holy##</div>
+            <div class="col" id="holy-neg">holy##</div>
+          </div>
+      </div>
+      <div class="container" id="res">
+        <div class="row" id="res-title">Resistances</div>
+        <div class="row" id="res-immu">
+          <div class="col" id="immu-title">Immunity</div>
+          <div class="col" id="immu-def">imu##</div>
+          <div class="col" id="immu-neg">imu##</div>
         </div>
-        <div id="def-slas">
-          <div id="slas-title"></div>
-          <div id="slas-def"></div>
-          <div id="slas-neg"></div>
+        <div class="row" id="res-focu">
+          <div class="col" id="focu-title">Focus</div>
+          <div class="col" id="focu-def">foc##</div>
+          <div class="col" id="focu-neg">foc##</div>
         </div>
-        <div id="def-pier">
-          <div id="pier-title"></div>
-          <div id="pier-def"></div>
-          <div id="pier-neg"></div>
+        <div class="row" id="res-robu">
+          <div class="col" id="robu-title">Robustness</div>
+          <div class="col" id="robu-def">rob##</div>
+          <div class="col" id="robu-neg">rob##</div>
         </div>
-        <div id="def-magi">
-          <div id="magi-title"></div>
-          <div id="magi-def"></div>
-          <div id="magi-neg"></div>
+        <div class="row" id="res-vita">
+          <div class="col" id="vita-title">Vitality</div>
+          <div class="col" id="vita-def">vit##</div>
+          <div class="col" id="vita-neg">vit##</div>
         </div>
-        <div id="def-fire">
-          <div id="fire-title"></div>
-          <div id="fire-def"></div>
-          <div id="fire-neg"></div>
-        </div>
-        <div id="def-ligh">
-          <div id="ligh-title"></div>
-          <div id="ligh-def"></div>
-          <div id="ligh-neg"></div>
-        </div>
-        <div id="def-holy">
-          <div id="holy-title"></div>
-          <div id="holy-def"></div>
-          <div id="holy-neg"></div>
-        </div>
+      </div>
     </div>
   </section>
-  <script type="module" src="./src/assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 <foot>
   <section id="resetbtn"></section>
