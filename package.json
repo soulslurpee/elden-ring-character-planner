@@ -1,0 +1,23 @@
+{
+  "name": "elden-ring-character-planner",
+  "version": "1.0.0",
+  "description": "",
+  "src": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulslurpee/elden-ring-character-planner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulslurpee/elden-ring-character-planner/issues"
+  },
+  "homepage": "https://github.com/soulslurpee/elden-ring-character-planner#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
